@@ -1,0 +1,26 @@
+
+GoboLight
+=========
+
+An ultra-simple backlight tool. Currently supports Linux.
+
+Requirements
+------------
+
+* Linux with a backlight driver that supports `/sys/class/backlight`.
+
+Usage
+-----
+
+### GUI
+
+There is a systray-style widget for Awesome WM: [gobo-awesome-light](https://github.com/gobolinux/gobo-awesome-light)
+
+### Command-line
+
+The interface is via a simple command-line client, inspired by `xbacklight`:
+
+* `gobolight` - Displays current brightness on a scale from 0 to 100
+* `gobolight <n>` - Set brightness to `n` on a scale from 0 to 100. 0 means "display off"; 100 means "full brightness".
+* `gobolight -inc <n>` - Increase brightness by `n`, capping at 100 (full brightness).
+* `gobolight -dec <n>` - Decrease brightness by `n`, capping at 0 (display off).
